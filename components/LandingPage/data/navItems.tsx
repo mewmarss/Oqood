@@ -5,33 +5,35 @@ export const NavItems = [
     name: "PRODUCTS",
     href: "/",
     submenu: [
+      { name: "EPC PROJECT DIVISION", href: "/products/epcproject" },
+      { name: "CHEMICAL DIVISION", href: "/products/chemicaldivision" },
       { name: "PUMPS", href: "/products/pumps" },
-      { name: "MECHANICAL SEALS", href: "/products/mechanical-seals" },
+      { name: "MECHANICAL SEALS", href: "/products/mechanicalseals" },
       {
         name: "SEAL SUPPORTING SYSTEMS",
-        href: "/products/seal-supporting-systems",
+        href: "/products/sealsupportingsystems",
       },
       { name: "VALVES", href: "/products/valves" },
       {
         name: "GRAPHITE PACKINGS & GASKETS",
-        href: "/products/graphite-packings-gaskets",
+        href: "/products/graphitepackingsgaskets",
       },
       {
         name: "EXPANSION JOINT & BELLOWS",
-        href: "/products/expansion-joint-bellows",
+        href: "/products/expansionjointbellows",
       },
       {
         name: "INPRO SEALS (BEARING ISOLATOR)",
-        href: "/products/inpro-seals-bearing-isolator",
+        href: "/products/inprosealsbearingisolator",
       },
       {
         name: "SEGMENTAL CARBON RINGS",
-        href: "/products/segmental-carbon-rings",
+        href: "/products/segmentalcarbonrings",
       },
       { name: "COUPLINGS", href: "/products/couplings" },
       {
         name: "ALL TYPE OF INSTRUMENTS",
-        href: "/products/all-type-instruments",
+        href: "/products/alltypeinstruments",
       },
     ],
   },
