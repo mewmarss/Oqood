@@ -9,8 +9,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
-  // State to handle dropdown visibility
-  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState<string | null>(null);
 
   return (
     <>
@@ -36,8 +35,8 @@ const Navbar = () => {
               <div
                 key={nav.name}
                 className="relative"
-                onMouseEnter={() => nav.submenu && setDropdownVisible(true)}
-                onMouseLeave={() => nav.submenu && setDropdownVisible(false)}
+                onMouseEnter={() => nav.submenu && setDropdownVisible(nav.name)}
+                onMouseLeave={() => nav.submenu && setDropdownVisible(null)}
               >
                 <Link href={nav.href}>
                   <Button
@@ -49,8 +48,8 @@ const Navbar = () => {
                   </Button>
                 </Link>
 
-                {/* Dropdown for Products */}
-                {nav.submenu && dropdownVisible && (
+                {/* Dropdown menu */}
+                {nav.submenu && dropdownVisible === nav.name && (
                   <div className="absolute left-0 w-fit bg-blue-900 rounded-lg shadow-lg z-50">
                     {nav.submenu.map((subnav) => (
                       <Link key={subnav.name} href={subnav.href}>

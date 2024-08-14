@@ -140,7 +140,7 @@ const AboutUs = () => {
         </div>
         <div className="flex-1 text-right">
           <a
-            href="#"
+            href="/enquiry"
             className="inline-block py-4 px-6 text-gray-200 border-2 border-yellow-400 rounded-md text-base transition-colors duration-200 hover:bg-yellow-400 hover:text-blue-900"
           >
             Get in Touch

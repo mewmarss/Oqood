@@ -25,7 +25,7 @@ const ContactUs = () => {
             {/* Map Section */}
             <div className="flex-1">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687804.134287728!2d48.597517252063344!3d26.980715211878748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e31f9471dcd7d57%3A0xe7ad37313c9e9f0b!2sJubail%2C%20Eastern%20Province%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1692100571194!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43421.828232368964!2d49.53224149754951!3d27.04621311923534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e3508ac245f9d8d%3A0xa2d87145eb4a9d58!2sSecond%20Industrial%20Support%20Area%2C%20Al%20Jubail%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1723659334783!5m2!1sen!2sin"
                 width="500"
                 height="300"
                 style={{ border: 0 }}
@@ -38,30 +38,46 @@ const ContactUs = () => {
               <h2 className="text-gray-800 text-2xl mb-4">
                 Contact Information
               </h2>
-              <p className="text-gray-700 text-lg mb-4 flex items-center">
-                <img
-                  src="images/icons/address.png"
-                  alt="Address Icon"
-                  className="mr-3 inline-block"
-                />
-                <strong className=" mr-2">Address:</strong> Pump and Seals, Po
-                Box 32925, Dubai, U.A.E
+
+              <p className="text-gray-700 text-lg mb-4 flex">
+                <div className="flex items-start">
+                  <img
+                    src="images/icons/address.png"
+                    alt="Address Icon"
+                    className="mr-3 inline-block"
+                  />
+                  <strong className="mr-2">Address:</strong>
+                </div>
+                <span className="flex-1">
+                  Building No. 3487, Street No. 112, 1ST Industrial Area, Postal
+                  Code 35717, Al Jubail - Kingdom of Saudi Arabia
+                </span>
               </p>
-              <p className="text-gray-700 text-lg mb-4 flex items-center">
-                <img
-                  src="images/icons/black-email.png"
-                  alt="Email Icon"
-                  className="mr-3 inline-block"
-                />
-                <strong className=" mr-2">Email:</strong> your@email.com
+
+              <p className="text-gray-700 text-lg mb-4 flex">
+                <div className="flex items-start">
+                  <img
+                    src="images/icons/black-email.png"
+                    alt="Email Icon"
+                    className="mr-3 inline-block"
+                  />
+                  <strong className="mr-2">Email:</strong>
+                </div>
+                <span className="flex-1 hover:underline">
+                  <a href="mailto:info@oqoodsa.com">info@oqoodsa.com</a>
+                </span>
               </p>
-              <p className="text-gray-700 text-lg flex items-center">
-                <img
-                  src="images/icons/black-phone.png"
-                  alt="Phone Icon"
-                  className="mr-3 inline-block"
-                />
-                <strong className=" mr-2">Telephone:</strong> +1 234 567 890
+
+              <p className="text-gray-700 text-lg flex">
+                <div className="flex items-start">
+                  <img
+                    src="images/icons/black-phone.png"
+                    alt="Phone Icon"
+                    className="mr-3 inline-block"
+                  />
+                  <strong className="mr-2">Telephone:</strong>
+                </div>
+                <span className="flex-1">+1 234 567 890</span>
               </p>
             </div>
           </div>
