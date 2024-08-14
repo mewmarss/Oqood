@@ -10,6 +10,7 @@ import { items } from "./data/productsRange";
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Link from "next/link";
 
 const LandingPage = () => {
   return (
@@ -34,25 +35,26 @@ const LandingPage = () => {
               </h1>
               <div className=" text-gray-500">
                 <p className="mt-6 text-left leading-relaxed mb-6">
-                  Hydro Serve Pumps & Machinery Trading Company is the one of
-                  the leading trading company supplying & providing
-                  comprehensive range of equipment for all type of Industries
-                  including Oil & gas, Petrochemical, Fertilizer,
-                  Pharmaceutical, Cement, Paper Pulp, Power, Paint, Marine, Food
-                  & Beverages etc. companies across UAE & Middle East. The
-                  company follows ISO 9001 : 2015 standards as per established
-                  Quality Management System.
+                  Oqood is a dynamic and versatile company based in the heart of
+                  the support industries in Jubail. We specialize in
+                  contracting, trading, and manufacturing, offering a
+                  comprehensive range of services designed to meet the diverse
+                  needs of our clients. Our commitment to excellence is
+                  reflected in our unwavering focus on ethical practices and the
+                  timely delivery of projects and products.
                 </p>
 
                 <p className="text-left leading-relaxed">
-                  All our Products are sourced from reputed Original Equipment
-                  Manufacturers & are quality certified as per ISO & other
-                  international standards. We are known as the most reliable
-                  supplier of quality products at competitive prices with timely
-                  deliveries. WE have earned name among the entire UAE and
-                  overseas customers for providing Cost Cutting effective
-                  solutions. We always endeavor to provide prompt responses to
-                  queries and complete technical support after sales.
+                  At Oqood, we pride ourselves on our ability to navigate the
+                  complexities of the modern market while maintaining the
+                  highest standards of integrity and efficiency. Our dedicated
+                  team works tirelessly to ensure that every project is
+                  completed to the utmost satisfaction of our clients,
+                  reinforcing our reputation as a reliable and trustworthy
+                  partner in the industry. Join us at Oqood, where our
+                  dedication to ethics and punctuality drives our success and
+                  sets us apart in the competitive landscape of contracting,
+                  trading, and manufacturing.
                 </p>
               </div>
             </div>
@@ -82,18 +84,16 @@ const LandingPage = () => {
             <div className="border-r border-gray-400 px-4">
               <h2 className="text-lg font-semibold">Our Mission</h2>
               <p className="text-gray-500">
-                To achieve utmost customer satisfaction by providing innovative
-                and sustainable technology solutions & products to our
-                customers, meeting their business objectives.
+                To deliver exceptional contracting, trading, and manufacturing
+                services in Saudi Arabia, driven by innovation, quality, and
+                integrity.
               </p>
             </div>
             <div className="pl-4">
               <h2 className="text-lg font-semibold">Our Vision</h2>
               <p className="text-gray-500">
-                Our Vision is strive for excellence & become a reliable &
-                Competitive Partner which provides complete solution, services &
-                supply International standard of quality products, adding value
-                to your business.
+                To be a leading force in Saudi Arabias industrial landscape,
+                setting new benchmarks in quality and efficiency.
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ const LandingPage = () => {
       </section>
 
       <section
-        className="flex flex-col gap-2 mt-16"
+        className="flex flex-col gap-2 mt-16 py-10"
         style={{
           backgroundImage: `url(${catalogImg.src})`,
           backgroundSize: "cover",
@@ -119,25 +119,22 @@ const LandingPage = () => {
           </div>
           <div className="grid grid-cols-3 gap-4 mt-10 mb-10">
             {items.map((item) => (
-              <div
-                key={item.name}
-                className="border rounded-lg overflow-hidden"
-              >
-                <div className="relative w-full h-64">
-                  {" "}
-                  {/* Adjust height as needed */}
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    layout="fill" // Fills the entire container
-                    objectFit="cover" // Ensures the image covers the container
-                    className="absolute inset-0 hover:cursor-pointer"
-                  />
+              <Link key={item.name} href={item.href} passHref>
+                <div className="border rounded-lg overflow-hidden cursor-pointer">
+                  <div className="relative w-full h-64">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      layout="fill" // Fills the entire container
+                      objectFit="cover" // Ensures the image covers the container
+                      className="absolute inset-0"
+                    />
+                  </div>
+                  <div className="p-4 text-center text-white bg-blue-900">
+                    <h3 className="text-lg font-semibold">{item.name}</h3>
+                  </div>
                 </div>
-                <div className="p-4 text-center text-white">
-                  <h3 className="text-lg font-semibold">{item.name}</h3>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </MaxWidthWrapper>
@@ -148,7 +145,7 @@ const LandingPage = () => {
           <div className=" flex flex-col">
             <div className=" text-center">
               <h2 className=" font-medium text-3xl text-blue-900">
-                Why Choose Oqood ?
+                Why Choose OQOOD ?
               </h2>
             </div>
             <div className=" mt-20 grid grid-cols-4 gap-14 mb-10">

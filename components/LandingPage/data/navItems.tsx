@@ -31,10 +31,16 @@ export const NavItems = [
         href: "/products/segmentalcarbonrings",
       },
       { name: "COUPLINGS", href: "/products/couplings" },
-      {
-        name: "ALL TYPE OF INSTRUMENTS",
-        href: "/products/alltypeinstruments",
-      },
+      { name: "ALL TYPE OF INSTRUMENTS", href: "/products/alltypeinstruments" },
+    ],
+  },
+  {
+    name: "ENQUIRY FORMS",
+    href: "/enquiryforms",
+    submenu: [
+      { name: "AGITATOR INFORMATION", href: "/enquiryforms/agitator" },
+      { name: "BEARING ISOLATOR INFORMATION", href: "/enquiryforms/bearing" },
+      { name: "PUMP INFORMATION", href: "/enquiryforms/pump" },
     ],
   },
   { name: "ENQUIRY US", href: "/enquiry" },

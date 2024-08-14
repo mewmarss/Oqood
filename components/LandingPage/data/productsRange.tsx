@@ -10,14 +10,42 @@ import couplingsImg from "../../../public/images/range/COUPLINGS.jpg";
 import instrumentsImg from "../../../public/images/range/ALL TYPE OF INSTRUMENSTS.jpeg";
 
 export const items = [
-  { name: "PUMPS", image: pumpsImg },
-  { name: "MECHANICAL SEALS", image: mechanicalSealsImg },
-  { name: "SEAL SUPPORTING SYSTEMS", image: sealSupportingSystemsImg },
-  { name: "VALVES", image: valvesImg },
-  { name: "GRAPHITE PACKINGS & GASKETS", image: graphitePackingsImg },
-  { name: "EXPANSION JOINT & BELLOWS", image: expansionJointsImg },
-  { name: "INPRO SEALS (BEARING ISOLATOR)", image: inproSealsImg },
-  { name: "SEGMENTAL CARBON RINGS", image: segmentalCarbonRingsImg },
-  { name: "COUPLINGS", image: couplingsImg },
-  { name: "ALL TYPE OF INSTRUMENTS", image: instrumentsImg },
+  { name: "PUMPS", image: pumpsImg, href: "/products/pumps" },
+  {
+    name: "MECHANICAL SEALS",
+    image: mechanicalSealsImg,
+    href: "/products/mechanicalseals",
+  },
+  {
+    name: "SEAL SUPPORTING SYSTEMS",
+    image: sealSupportingSystemsImg,
+    href: "/products/sealsupportingsystems",
+  },
+  { name: "VALVES", image: valvesImg, href: "/products/valves" },
+  {
+    name: "GRAPHITE PACKINGS & GASKETS",
+    image: graphitePackingsImg,
+    href: "/products/graphitepackingsgaskets",
+  },
+  {
+    name: "EXPANSION JOINT & BELLOWS",
+    image: expansionJointsImg,
+    href: "/products/expansionjointbellows",
+  },
+  {
+    name: "INPRO SEALS (BEARING ISOLATOR)",
+    image: inproSealsImg,
+    href: "/products/inprosealsbearingisolator",
+  },
+  {
+    name: "SEGMENTAL CARBON RINGS",
+    image: segmentalCarbonRingsImg,
+    href: "/products/segmentalcarbonrings",
+  },
+  { name: "COUPLINGS", image: couplingsImg, href: "/products/couplings" },
+  {
+    name: "ALL TYPE OF INSTRUMENTS",
+    image: instrumentsImg,
+    href: "/products/alltypeinstruments",
+  },
 ];
