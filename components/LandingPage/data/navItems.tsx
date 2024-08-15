@@ -43,6 +43,6 @@ export const NavItems = [
       { name: "BEARING DATA SHEET", href: "/enquiryforms/bearing" },
     ],
   },
-  { name: "ENQUIRY US", href: "/enquiry" },
+  { name: "ENQUIRY", href: "/enquiry" },
   { name: "CONTACT US", href: "/contact" },
 ];
