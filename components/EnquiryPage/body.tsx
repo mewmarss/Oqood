@@ -11,8 +11,6 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 
 const serviceOptions = [
-  "EPC PROJECT DIVISION",
-  "CHEMICAL DIVISION",
   "PUMPS",
   "MECHANICAL SEALS",
   "SEAL SUPPORTING SYSTEMS",
@@ -23,6 +21,8 @@ const serviceOptions = [
   "SEGMENTAL CARBON RINGS",
   "COUPLINGS",
   "ALL TYPE OF INSTRUMENTS",
+  "EPC PROJECT DIVISION",
+  "CHEMICAL DIVISION",
   "OTHER",
 ];
 
@@ -51,6 +51,11 @@ const EnquiryPage = () => {
       });
       await sendMail(htmlContent, `Enquiry made by ${senderName}: Oqood`);
       toast.success("Email sent successfully!");
+      setSenderName("");
+      setSenderEmail("");
+      setDescriptionMessage("");
+      setPhone("");
+      setServiceInterest("");
     } catch (e) {
       console.error(e);
       toast.error("Something went wrong. Please try again later.");
