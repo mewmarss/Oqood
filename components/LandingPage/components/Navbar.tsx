@@ -17,13 +17,13 @@ const Navbar = () => {
         <h2>OQOOD</h2>
         <div className="flex justify-between items-center gap-6">
           <p className="flex gap-2 items-center">
-            <MessageCircle /> +971 12345678
+            <MessageCircle /> +966 0553394387
           </p>
           <p className="flex gap-2 items-center">
-            <Mail /> +971 12345678
+            <Mail /> +966 0553394387
           </p>
           <p className="flex gap-2 items-center">
-            <Phone /> +971 12345678
+            <Phone /> +966 0553394387
           </p>
         </div>
       </div>
