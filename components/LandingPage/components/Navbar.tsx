@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center px-24 bg-blue-900 p-2.5 text-white font-bold text-sm">
-        <h2>OQOOD</h2>
+        <h2>OQOOD AL BALAD FACTORY</h2>
         <div className="flex justify-between items-center gap-6">
           <p className="flex gap-2 items-center">
             <MessageCircle /> +966 0553394387

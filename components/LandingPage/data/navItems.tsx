@@ -5,8 +5,6 @@ export const NavItems = [
     name: "PRODUCTS",
     href: "/",
     submenu: [
-      { name: "EPC PROJECT DIVISION", href: "/products/epcproject" },
-      { name: "CHEMICAL DIVISION", href: "/products/chemicaldivision" },
       { name: "PUMPS", href: "/products/pumps" },
       { name: "MECHANICAL SEALS", href: "/products/mechanicalseals" },
       {
@@ -32,15 +30,17 @@ export const NavItems = [
       },
       { name: "COUPLINGS", href: "/products/couplings" },
       { name: "ALL TYPE OF INSTRUMENTS", href: "/products/alltypeinstruments" },
+      { name: "EPC PROJECT DIVISION", href: "/products/epcproject" },
+      { name: "CHEMICAL DIVISION", href: "/products/chemicaldivision" },
     ],
   },
   {
     name: "ENQUIRY FORMS",
     href: "/enquiryforms",
     submenu: [
-      { name: "AGITATOR INFORMATION", href: "/enquiryforms/agitator" },
-      { name: "BEARING ISOLATOR INFORMATION", href: "/enquiryforms/bearing" },
-      { name: "PUMP INFORMATION", href: "/enquiryforms/pump" },
+      { name: "PUMP / SEAL DATA SHEET", href: "/enquiryforms/pump" },
+      { name: "AGITATOR DATA SHEET", href: "/enquiryforms/agitator" },
+      { name: "BEARING DATA SHEET", href: "/enquiryforms/bearing" },
     ],
   },
   { name: "ENQUIRY US", href: "/enquiry" },

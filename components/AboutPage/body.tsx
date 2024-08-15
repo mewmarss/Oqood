@@ -100,7 +100,7 @@ const AboutUs = () => {
                 Integrity
               </h3>
               <p>
-                Every employee of Hydro Serve will act with the highest level of
+                Every employee of OQOOD will act with the highest level of
                 business ethics. We act openly and with honesty. We will comply
                 with local rules and regulations.
               </p>
@@ -110,8 +110,8 @@ const AboutUs = () => {
                 Health & Safety
               </h3>
               <p>
-                We manage HSE as a core business activity and expect everyone to
-                be a Safety Leader.
+                We manage OQOOD as a core business activity and expect everyone
+                to be a Safety Leader.
               </p>
             </div>
             <div>
