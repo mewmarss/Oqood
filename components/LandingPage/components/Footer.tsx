@@ -17,7 +17,9 @@ const Footer = () => {
                 info@oqoodsa.com
               </a>
             </p>
-            {/* <p>Phone: +1 234 567 890</p> */}
+            <p>
+              <strong>Phone:</strong> +966 0553394387
+            </p>
             {/* <div className="flex space-x-4 mt-4">
               <a href="#" aria-label="LinkedIn">
                 <img src="/images/linkedin.png" alt="LinkedIn" />
