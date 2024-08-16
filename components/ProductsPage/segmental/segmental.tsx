@@ -14,9 +14,9 @@ const SegmentalPage = () => {
         <img
           src="/images/banner.jpg"
           alt="About Us Banner"
-          className="w-full h-auto"
+          className="w-full h-[200px] md:h-auto"
         />
-        <h1 className="absolute inset-0 flex flex-col items-center justify-center text-white text-4xl sm:text-5xl md:text-5xl z-10">
+        <h1 className="absolute inset-0 flex flex-col items-center justify-center text-white text-2xl sm:text-5xl md:text-5xl z-10">
           SEGMENTAL CARBON RINGS
           <p className=" text-lg font-light mt-5">Home/ Products</p>
         </h1>
@@ -30,7 +30,7 @@ const SegmentalPage = () => {
 
       <section>
         <MaxWidthWrapper>
-          <div className=" flex justify-between items-center mt-8">
+          <div className=" flex justify-between items-center flex-col md:flex-row mt-8">
             <div>
               <div>
                 <ul className="list-none pl-4 space-y-2">
@@ -43,7 +43,7 @@ const SegmentalPage = () => {
                 </ul>
               </div>
             </div>
-            <div className=" mr-24">
+            <div className="mr-0 p-16 md:p-0 md:mr-24">
               <CarouselOne />
             </div>
           </div>

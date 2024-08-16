@@ -11,7 +11,7 @@ const ContactUs = () => {
         <img
           src="/images/banner.jpg"
           alt="About Us Banner"
-          className="w-full h-auto"
+          className="w-full h-[200px] md:h-auto"
         />
         <h1 className="absolute inset-0 flex flex-col items-center justify-center text-white text-4xl sm:text-5xl md:text-5xl z-10">
           CONTACT US
@@ -21,7 +21,7 @@ const ContactUs = () => {
 
       <section>
         <MaxWidthWrapper>
-          <div className="flex justify-between items-start mx-5 py-10 space-x-8 mt-10">
+          <div className="flex flex-col md:flex-row justify-between items-start mx-5 py-10 md:space-x-8 mt-10">
             {/* Map Section */}
             <div className="flex-1">
               <iframe
@@ -30,11 +30,12 @@ const ContactUs = () => {
                 height="300"
                 style={{ border: 0 }}
                 loading="lazy"
+                className=" w-full md:w-[500px] h-[300px]"
               ></iframe>
             </div>
 
             {/* Contact Information Section */}
-            <div className="flex-1 bg-gray-100 p-5 rounded-lg shadow-lg">
+            <div className="flex-1 bg-gray-100 p-5 rounded-lg mt-5 md:mt-0 shadow-lg">
               <h2 className="text-gray-800 text-2xl mb-4">
                 Contact Information
               </h2>
