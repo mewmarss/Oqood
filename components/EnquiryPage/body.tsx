@@ -72,7 +72,7 @@ const EnquiryPage = () => {
         <img
           src="/images/banner.jpg"
           alt="About Us Banner"
-          className="w-full h-auto"
+          className="w-full h-[200px] md:h-auto"
         />
         <h1 className="absolute inset-0 flex flex-col items-center justify-center text-white text-4xl sm:text-5xl md:text-5xl z-10">
           ENQUIRY US
@@ -80,8 +80,8 @@ const EnquiryPage = () => {
         </h1>
       </div>
 
-      <div className="flex justify-between items-center px-24 py-10 mt-12">
-        <div className="w-1/2">
+      <div className="flex justify-between items-center px-8 md:px-24 py-10 mt-12">
+        <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold text-blue-900 mb-6">Enquiry Us</h2>
           <form
             onSubmit={async (e) => {
@@ -90,11 +90,11 @@ const EnquiryPage = () => {
             }}
             className="space-y-4"
           >
-            <div className="flex space-x-4">
+            <div className="flex flex-col md:flex-row md:space-x-4 gap-4 md:gap-0">
               <input
                 type="text"
                 placeholder="Name *"
-                className="w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
+                className=" w-full md:w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
                 required
@@ -102,22 +102,22 @@ const EnquiryPage = () => {
               <input
                 type="email"
                 placeholder="Email *"
-                className="w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
+                className="w-full md:w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
                 value={senderEmail}
                 onChange={(e) => setSenderEmail(e.target.value)}
                 required
               />
             </div>
-            <div className="flex space-x-4">
+            <div className="flex flex-col md:flex-row md:space-x-4 gap-4 md:gap-0">
               <input
                 type="text"
                 placeholder="Phone"
-                className="w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
+                className="w-full md:w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
               <select
-                className="w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
+                className="w-full md:w-1/2 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
                 value={serviceInterest}
                 onChange={(e) => setServiceInterest(e.target.value)}
                 required
@@ -139,14 +139,14 @@ const EnquiryPage = () => {
             ></textarea>
             <Button
               type="submit"
-              className="bg-red-500 text-white font-bold py-2 px-6 rounded-md hover:bg-red-600 transition"
+              className="bg-red-500 text-white font-bold py-2 px-6 rounded-md hover:bg-red-600 transition w-full md:w-auto"
               disabled={isMailSending}
             >
               {isMailSending ? "Sending..." : "SUBMIT"}
             </Button>
           </form>
         </div>
-        <div className="w-1/3">
+        <div className="w-1/3 hidden md:block">
           <Image
             src={pumpImage}
             alt="Pumps"

@@ -12,7 +12,7 @@ const AboutUs = () => {
         <img
           src="/images/banner.jpg"
           alt="About Us Banner"
-          className="w-full h-auto"
+          className="w-full h-[200px] md:h-auto"
         />
         <h1 className="absolute inset-0 flex flex-col items-center justify-center text-white text-4xl sm:text-5xl md:text-5xl z-10">
           ABOUT US
@@ -128,20 +128,20 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <div className="bg-blue-900 text-gray-200 py-10 px-12 flex justify-between items-center">
-        <div className="flex-2">
-          <p className="text-2xl leading-relaxed">
+      <div className="bg-blue-900 text-gray-200 py-10 px-12 flex flex-col md:flex-row justify-between items-center">
+        <div className="flex-2 text-center md:text-left mb-6 md:mb-0">
+          <p className="text-xl md:text-2xl leading-relaxed">
             Looking for an Adequate Solution for your Company?
           </p>
           <br />
-          <span className="text-sm">
+          <span className="text-xs md:text-sm">
             Contact us today for free consultation or more information.
           </span>
         </div>
-        <div className="flex-1 text-right">
+        <div className="flex-1 text-center md:text-right">
           <a
             href="/enquiry"
-            className="inline-block py-4 px-6 text-gray-200 border-2 border-yellow-400 rounded-md text-base transition-colors duration-200 hover:bg-yellow-400 hover:text-blue-900"
+            className="inline-block py-3 px-4 md:py-4 md:px-6 text-gray-200 border-2 border-yellow-400 rounded-md text-sm md:text-base transition-colors duration-200 hover:bg-yellow-400 hover:text-blue-900"
           >
             Get in Touch
           </a>

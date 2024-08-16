@@ -21,20 +21,20 @@ const LandingPage = () => {
         <Carousel />
       </section>
 
-      <section className=" flex flex-col gap-2 mt-14">
+      <section className="flex flex-col gap-2 mt-14">
         <MaxWidthWrapper>
-          <div className=" flex flex-col gap-2 text-blue-900">
-            <h2 className=" font-light">ABOUT US</h2>
-            <h2 className=" font-extrabold text-3xl">WHO WE ARE</h2>
-            <div className=" w-24 h-[2px] bg-blue-900"></div>
+          <div className="flex flex-col gap-2 text-blue-900">
+            <h2 className="font-light">ABOUT US</h2>
+            <h2 className="font-extrabold text-3xl">WHO WE ARE</h2>
+            <div className="w-24 h-[2px] bg-blue-900"></div>
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-8">
-            <div className=" flex flex-col">
-              <h1 className=" text-blue-900 text-5xl font-bold">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
+            <div className="flex flex-col">
+              <h1 className="text-blue-900 text-5xl font-bold">
                 OQOOD Al-BALAD
               </h1>
-              <div className=" text-gray-500">
-                <p className="mt-6 text-left leading-relaxed mb-6">
+              <div className="text-gray-500 mt-6">
+                <p className="text-left leading-relaxed mb-6">
                   Oqood is a dynamic and versatile company based in the heart of
                   the support industries in Jubail. We specialize in
                   contracting, trading, and manufacturing, offering a
@@ -58,22 +58,28 @@ const LandingPage = () => {
                 </p>
               </div>
             </div>
-            <div>
-              <Image src={aboutImg} alt="Parts" />
+            <div className="w-full h-auto hidden md:block">
+              <Image
+                src={aboutImg}
+                alt="Parts"
+                objectFit="cover"
+                width={500}
+                height={500}
+              />
             </div>
           </div>
         </MaxWidthWrapper>
       </section>
 
-      <section className=" flex flex-col gap-2 mt-16">
+      <section className="flex flex-col gap-2 mt-16">
         <MaxWidthWrapper>
-          <div className=" flex flex-col gap-2 text-blue-900">
-            <h2 className=" font-light">THE DIFFERENCE</h2>
-            <h2 className=" font-extrabold text-3xl">WHY CHOOSE US</h2>
-            <div className=" w-24 h-[2px] bg-blue-900"></div>
+          <div className="flex flex-col gap-2 text-blue-900">
+            <h2 className="font-light">THE DIFFERENCE</h2>
+            <h2 className="font-extrabold text-3xl">WHY CHOOSE US</h2>
+            <div className="w-24 h-[2px] bg-blue-900"></div>
           </div>
-          <div className="grid grid-cols-3 gap-2 mt-10">
-            <div className="border-r border-gray-400 pr-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+            <div className="border-r border-gray-400 pr-4 pl-4 md:pl-0">
               <h2 className="text-lg font-semibold">Value</h2>
               <p className="text-gray-500">
                 Innovation, Reliability, Excellence, Collaboration,
@@ -92,8 +98,8 @@ const LandingPage = () => {
             <div className="pl-4">
               <h2 className="text-lg font-semibold">Our Vision</h2>
               <p className="text-gray-500">
-                To be a leading force in Saudi Arabias industrial landscape,
-                setting new benchmarks in quality and efficiency.
+                To be a leading force in Saudi Arabia&apos;s industrial
+                landscape, setting new benchmarks in quality and efficiency.
               </p>
             </div>
           </div>
@@ -110,14 +116,14 @@ const LandingPage = () => {
         }}
       >
         <MaxWidthWrapper>
-          <div className=" flex flex-col gap-4">
-            <div className=" text-center mt-10">
-              <h1 className=" font-bold text-white text-3xl">
+          <div className="flex flex-col gap-4">
+            <div className="text-center mt-10">
+              <h1 className="font-bold text-white text-3xl">
                 OUR PRODUCTS RANGE
               </h1>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-4 mt-10 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-10">
             {items.map((item) => (
               <Link key={item.name} href={item.href} passHref>
                 <div className="border rounded-lg overflow-hidden cursor-pointer">
@@ -140,48 +146,56 @@ const LandingPage = () => {
         </MaxWidthWrapper>
       </section>
 
-      <section className=" flex flex-col gap-2 mt-16">
+      <section className="flex flex-col gap-2 mt-16">
         <MaxWidthWrapper>
-          <div className=" flex flex-col">
-            <div className=" text-center">
-              <h2 className=" font-medium text-3xl text-blue-900">
+          <div className="flex flex-col">
+            <div className="text-center">
+              <h2 className="font-medium text-3xl text-blue-900">
                 Why Choose OQOOD ?
               </h2>
             </div>
-            <div className=" mt-20 grid grid-cols-4 gap-14 mb-10">
-              <div className=" flex flex-col gap-4 items-center text-center">
-                <Image src={qualityImg} alt="Quality" className=" w-16" />
-                <h2 className=" text-blue-900 text-lg">Quality</h2>
-                <p className=" text-gray-500 text-sm">
+            <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+              <div className="flex flex-col gap-4 items-center text-center">
+                <Image src={qualityImg} alt="Quality" className="w-16" />
+                <h2 className="text-blue-900 text-lg">Quality</h2>
+                <p className="text-gray-500 text-sm">
                   We provide unwavering commitment to quality while
-                  manufacturing and hence our boilers have low operational cost
+                  manufacturing and hence our boilers have low operational cost.
                 </p>
               </div>
-              <div className=" flex flex-col gap-4 items-center text-center">
-                <Image src={collabImg} alt="Quality" className=" w-16" />
-                <h2 className=" text-blue-900 text-lg">Innovation</h2>
-                <p className=" text-gray-500 text-sm">
+              <div className="flex flex-col gap-4 items-center text-center">
+                <Image src={collabImg} alt="Collaboration" className="w-16" />
+                <h2 className="text-blue-900 text-lg">Innovation</h2>
+                <p className="text-gray-500 text-sm">
                   Oqood has a strong commitment to innovation, continuously
                   striving to develop advanced thermal solutions that cater to
-                  the evolving needs of diverse industries
+                  the evolving needs of diverse industries.
                 </p>
               </div>
-              <div className=" flex flex-col gap-4 items-center text-center">
-                <Image src={innovationImg} alt="Quality" className=" w-16" />
-                <h2 className=" text-blue-900 text-lg">Sustainability</h2>
-                <p className=" text-gray-500 text-sm">
+              <div className="flex flex-col gap-4 items-center text-center">
+                <Image
+                  src={innovationImg}
+                  alt="Sustainability"
+                  className="w-16"
+                />
+                <h2 className="text-blue-900 text-lg">Sustainability</h2>
+                <p className="text-gray-500 text-sm">
                   Our products are designed to maximize energy efficiency,
                   resulting in reduced fuel consumption and lower carbon
-                  footprints
+                  footprints.
                 </p>
               </div>
-              <div className=" flex flex-col gap-4 items-center text-center">
-                <Image src={customerImg} alt="Quality" className=" w-16" />
-                <h2 className=" text-blue-900 text-lg">Customer centric</h2>
-                <p className=" text-gray-500 text-sm">
+              <div className="flex flex-col gap-4 items-center text-center">
+                <Image
+                  src={customerImg}
+                  alt="Customer Centric"
+                  className="w-16"
+                />
+                <h2 className="text-blue-900 text-lg">Customer Centric</h2>
+                <p className="text-gray-500 text-sm">
                   Our dedicated team of professionals ensures prompt and
                   efficient customer service, from initial consultation to
-                  after-sales support
+                  after-sales support.
                 </p>
               </div>
             </div>
@@ -189,7 +203,7 @@ const LandingPage = () => {
         </MaxWidthWrapper>
       </section>
 
-      <div className=" mt-10">
+      <div className="mt-10">
         <Footer />
       </div>
     </>
