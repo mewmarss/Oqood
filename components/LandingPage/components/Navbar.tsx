@@ -33,7 +33,9 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="flex flex-col text-white w-full font-bold text-sm border-blue-900 border-b-[6px] sticky top-0 z-50 bg-white">
         <div className="flex justify-between items-center px-4 py-2.5 lg:px-24">
-          <Image src={logo} alt="Oqood" width={100} />
+          <Link href="/">
+            <Image src={logo} alt="Oqood" width={100} />
+          </Link>
           <div className="lg:hidden">
             <Button
               variant={"ghost"}

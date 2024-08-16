@@ -98,8 +98,8 @@ const LandingPage = () => {
             <div className="pl-4">
               <h2 className="text-lg font-semibold">Our Vision</h2>
               <p className="text-gray-500">
-                To be a leading force in Saudi Arabia's industrial landscape,
-                setting new benchmarks in quality and efficiency.
+                To be a leading force in Saudi Arabia&apos;s industrial
+                landscape, setting new benchmarks in quality and efficiency.
               </p>
             </div>
           </div>
