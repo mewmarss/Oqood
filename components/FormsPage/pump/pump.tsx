@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import formPumpImage from "../../../public/images/forms/images/formPump.PNG";
 import Navbar from "@/components/LandingPage/components/Navbar";
 import Footer from "@/components/LandingPage/components/Footer";
 import { sendMail } from "@/lib/actions/sendMail";
@@ -208,7 +207,12 @@ const PumpFormPage = () => {
       >
         <div className=" grid grid-cols-2 mb-8">
           <div>
-            <Image src={formPumpImage} alt="Pump" />
+            <Image
+              src="/images/forms/images/formPump.PNG"
+              alt="Pump"
+              width={434}
+              height={444}
+            />
           </div>
           <div>
             <h2 className="text-xl font-semibold mt-6 mb-4">
