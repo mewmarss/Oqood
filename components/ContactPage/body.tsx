@@ -78,7 +78,7 @@ const ContactUs = () => {
                   />
                   <strong className="mr-2">Telephone:</strong>
                 </div>
-                <span className="flex-1">+966 0553394387</span>
+                <span className="flex-1">+966 0538013432</span>
               </p>
             </div>
           </div>

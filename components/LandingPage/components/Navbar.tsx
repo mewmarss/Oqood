@@ -19,13 +19,13 @@ const Navbar = () => {
         <h2 className="text-xs lg:text-sm">OQOOD AL BALAD FACTORY</h2>
         <div className="hidden lg:flex justify-between items-center gap-6">
           <p className="flex gap-2 items-center">
-            <MessageCircle /> +966 0553394387
+            <MessageCircle /> +966 0538013432
           </p>
           <p className="flex gap-2 items-center">
-            <Mail /> +966 0553394387
+            <Mail /> +966 0538013432
           </p>
           <p className="flex gap-2 items-center">
-            <Phone /> +966 0553394387
+            <Phone /> +966 0538013432
           </p>
         </div>
       </div>

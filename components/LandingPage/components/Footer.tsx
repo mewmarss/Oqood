@@ -18,7 +18,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="mb-2">
-              <strong>Phone:</strong> +966 0553394387
+              <strong>Phone:</strong> +966 0538013432
             </p>
           </div>
 
