@@ -205,8 +205,8 @@ const PumpFormPage = () => {
         }}
         className="max-w-7xl mx-auto p-6 bg-white shadow-xl rounded-lg mt-5"
       >
-        <div className=" grid grid-cols-2 mb-8">
-          <div>
+        <div className=" flex flex-col mb-8">
+          <div className=" items-center flex justify-center">
             <Image
               src="/images/forms/images/formPump.PNG"
               alt="Pump"
